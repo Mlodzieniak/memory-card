@@ -6,8 +6,14 @@ function Scoreboard(props) {
   const { score, highScore } = props;
   return (
     <div className="scoreboard">
-      <p className="current-score">Current score: {score}</p>
-      <p className="current-score">Highest score: {highScore}</p>
+      <div>
+        <p className="score-title">Current score: </p>
+        <h3 className="score">{score}</h3>
+      </div>
+      <div>
+        <p className="score-title">Highest score:</p>
+        <h3 className="score">{highScore}</h3>
+      </div>
     </div>
   );
 }

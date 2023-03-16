@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Container from "./components/Container";
 import Scoreboard from "./components/Scoreboard";
+import Footer from "./components/Footer";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -14,10 +15,13 @@ function App() {
     if (score > highScore) setHighScore(score);
   }, [score]);
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-      <Scoreboard score={score} highScore={highScore} />
-      <Container onPick={menageScore} />
+    <div className="wrapper">
+      <div className="app">
+        {/* <h1>Hello World!</h1> */}
+        <Container onPick={menageScore} />
+        <Scoreboard score={score} highScore={highScore} />
+        <Footer />
+      </div>
     </div>
   );
 }

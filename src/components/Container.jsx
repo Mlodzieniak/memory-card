@@ -23,6 +23,11 @@ function Container(props) {
     { name: "Mr. Krabs", path: "/characters/SpongeBob-Mr-Krabs.webp" },
     { name: "Karen", path: "/characters/SpongeBob-Karen.webp" },
     { name: "Gary", path: "/characters/SpongeBob-Gary.webp" },
+    { name: "Larry the Lobster", path: "/characters/Larry_11.webp" },
+    { name: "Flying Duchman", path: "/characters/Duchman.webp" },
+    { name: "King Neptune", path: "/characters/King_Neptune.webp" },
+    { name: "Perch Perkins", path: "/characters/Perch_Perkins.webp" },
+    { name: "Grandma Squarepants", path: "/characters/Grandma.webp" },
   ]);
   const shuffle = (array) => {
     const shuffledArray = [...array];
@@ -53,15 +58,17 @@ function Container(props) {
 
   return (
     <div className="container">
-      {cards.slice(0, 4).map((char) => (
+      {cards.slice(0, 6).map((char) => (
         <button
           type="button"
           key={uniqid()}
           className="card"
           onClick={() => pick(char.name)}
         >
-          <img src={char.path} alt={char.name} />
-          <p>{char.name}</p>
+          <div className="img-wrapper">
+            <img src={char.path} alt={char.name} />
+          </div>
+          <p className="char-name">{char.name}</p>
         </button>
       ))}
     </div>
