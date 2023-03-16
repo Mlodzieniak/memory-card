@@ -1,7 +1,11 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React, { useState, useEffect } from "react";
 import uniqid from "uniqid";
+import propTypes from "prop-types";
 
-function Container() {
+function Container(props) {
+  const { onPick } = props;
+  const [store, setStore] = useState([]);
   const [cards, setCards] = useState([
     {
       name: "SpongeBob SquarePants",
@@ -33,10 +37,19 @@ function Container() {
     }
     return shuffledArray;
   };
-  const picked = [];
   useEffect(() => {
     setCards(shuffle(cards));
   }, []);
+  const pick = (char) => {
+    if (store.includes(char)) {
+      setStore([]);
+      onPick(true);
+    } else {
+      setStore([...store, char]);
+      onPick(false);
+    }
+    setCards(shuffle(cards));
+  };
 
   return (
     <div className="container">
@@ -45,7 +58,7 @@ function Container() {
           type="button"
           key={uniqid()}
           className="card"
-          onClick={() => setCards(shuffle(cards))}
+          onClick={() => pick(char.name)}
         >
           <img src={char.path} alt={char.name} />
           <p>{char.name}</p>
@@ -54,5 +67,8 @@ function Container() {
     </div>
   );
 }
+Container.propTypes = {
+  onPick: propTypes.func.isRequired,
+};
 
 export default Container;
