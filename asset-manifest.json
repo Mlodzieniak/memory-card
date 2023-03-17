@@ -1,14 +1,29 @@
 {
   "files": {
     "main.css": "/memory-card/static/css/main.8e7ccfcd.css",
-    "main.js": "/memory-card/static/js/main.7a463ce9.js",
+    "main.js": "/memory-card/static/js/main.51f58bdd.js",
+    "static/media/Grandma.webp": "/memory-card/static/media/Grandma.7144ea9751660d62dc80.webp",
+    "static/media/Duchman.webp": "/memory-card/static/media/Duchman.c05aac51fd230748b6d7.webp",
+    "static/media/Larry_11.webp": "/memory-card/static/media/Larry_11.c114b8c622f5ff77ee82.webp",
+    "static/media/Perch_Perkins.webp": "/memory-card/static/media/Perch_Perkins.f571f5e7d97d63060ad3.webp",
+    "static/media/King_Neptune.webp": "/memory-card/static/media/King_Neptune.1c450838b2b3ed9512b1.webp",
     "static/media/spongebob.ttf": "/memory-card/static/media/spongebob.885335f34296fce21bdc.ttf",
+    "static/media/SpongeBob-SquarePants.webp": "/memory-card/static/media/SpongeBob-SquarePants.a2a0cedb9ff96ba3b8fb.webp",
+    "static/media/SpongeBob-Sandy.webp": "/memory-card/static/media/SpongeBob-Sandy.3fff2ee16f6c61c7a615.webp",
+    "static/media/SpongeBob-Plankton.webp": "/memory-card/static/media/SpongeBob-Plankton.6788ac2bc691331d38b4.webp",
+    "static/media/SpongeBob-Gary.webp": "/memory-card/static/media/SpongeBob-Gary.316a1aafc71a2fe4cb7a.webp",
+    "static/media/SpongeBob-Mrs-Puff.webp": "/memory-card/static/media/SpongeBob-Mrs-Puff.8714fe9cdc3fda7c70f6.webp",
+    "static/media/SpongeBob-Mr-Krabs.webp": "/memory-card/static/media/SpongeBob-Mr-Krabs.5c69619e90a8fe260080.webp",
+    "static/media/SpongeBob-Squidward.webp": "/memory-card/static/media/SpongeBob-Squidward.e3a6deeefff9e74d14b6.webp",
+    "static/media/SpongeBob-Pearl.webp": "/memory-card/static/media/SpongeBob-Pearl.bf2e67e043a23f0f5e0f.webp",
+    "static/media/SpongeBob-Patrick.webp": "/memory-card/static/media/SpongeBob-Patrick.680b4c59fb44b1aa5b97.webp",
+    "static/media/SpongeBob-Karen.webp": "/memory-card/static/media/SpongeBob-Karen.757cf93327a1d6bb6506.webp",
     "index.html": "/memory-card/index.html",
     "main.8e7ccfcd.css.map": "/memory-card/static/css/main.8e7ccfcd.css.map",
-    "main.7a463ce9.js.map": "/memory-card/static/js/main.7a463ce9.js.map"
+    "main.51f58bdd.js.map": "/memory-card/static/js/main.51f58bdd.js.map"
   },
   "entrypoints": [
     "static/css/main.8e7ccfcd.css",
-    "static/js/main.7a463ce9.js"
+    "static/js/main.51f58bdd.js"
   ]
 }
