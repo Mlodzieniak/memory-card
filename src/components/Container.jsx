@@ -30,7 +30,7 @@ function Container(props) {
       name: "Squidward",
       path: squidward,
     },
-    { name: "Sandy", sandy },
+    { name: "Sandy", path: sandy },
     {
       name: "Plankton",
       path: plankton,
