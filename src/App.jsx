@@ -15,13 +15,10 @@ function App() {
     if (score > highScore) setHighScore(score);
   }, [score]);
   return (
-    <div className="wrapper">
-      <div className="app">
-        {/* <h1>Hello World!</h1> */}
-        <Container onPick={menageScore} />
-        <Scoreboard score={score} highScore={highScore} />
-        <Footer />
-      </div>
+    <div className="app">
+      <Container onPick={menageScore} />
+      <Scoreboard score={score} highScore={highScore} />
+      <Footer />
     </div>
   );
 }
