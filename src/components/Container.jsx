@@ -79,11 +79,10 @@ function Container(props) {
       results.push(store.includes(ele.name));
     });
     const set = new Set(results);
-
-    if (set.size === 2 || (set.size === 1 && set.has(false))) {
+    if (set.has(false)) {
       return shuffledArray;
     }
-    if (set.size === 2 || (set.size === 1 && set.has(true))) {
+    if (store.length === cards.length) {
       return shuffledArray;
     }
     return shuffle(shuffledArray);
