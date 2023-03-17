@@ -2,6 +2,21 @@
 import React, { useState, useEffect } from "react";
 import uniqid from "uniqid";
 import propTypes from "prop-types";
+import spongebob from "../images/SpongeBob-SquarePants.webp";
+import squidward from "../images/SpongeBob-Squidward.webp";
+import sandy from "../images/SpongeBob-Sandy.webp";
+import plankton from "../images/SpongeBob-Plankton.webp";
+import pearl from "../images/SpongeBob-Pearl.webp";
+import patrick from "../images/SpongeBob-Patrick.webp";
+import puff from "../images/SpongeBob-Mrs-Puff.webp";
+import krabs from "../images/SpongeBob-Mr-Krabs.webp";
+import karen from "../images/SpongeBob-Karen.webp";
+import gary from "../images/SpongeBob-Gary.webp";
+import duchman from "../images/Duchman.webp";
+import larry from "../images/Larry_11.webp";
+import neptun from "../images/King_Neptune.webp";
+import perch from "../images/Perch_Perkins.webp";
+import grandma from "../images/Grandma.webp";
 
 function Container(props) {
   const { onPick } = props;
@@ -9,25 +24,43 @@ function Container(props) {
   const [cards, setCards] = useState([
     {
       name: "SpongeBob SquarePants",
-      path: "/characters/SpongeBob-SquarePants.webp",
+      path: spongebob,
     },
     {
       name: "Squidward",
-      path: "../../characters/SpongeBob-Squidward.webp",
+      path: squidward,
     },
-    { name: "Sandy", path: "../../characters/SpongeBob-Sandy.webp" },
-    { name: "Plankton", path: "../../characters/SpongeBob-Plankton.webp" },
-    { name: "Pearl", path: "../../characters/SpongeBob-Pearl.webp" },
-    { name: "Patrick", path: "../../characters/SpongeBob-Patrick.webp" },
-    { name: "Mrs. Puff", path: "../../characters/SpongeBob-Mrs-Puff.webp" },
-    { name: "Mr. Krabs", path: "../../characters/SpongeBob-Mr-Krabs.webp" },
-    { name: "Karen", path: "../../characters/SpongeBob-Karen.webp" },
-    { name: "Gary", path: "../../characters/SpongeBob-Gary.webp" },
-    { name: "Larry the Lobster", path: "../../characters/Larry_11.webp" },
-    { name: "Flying Duchman", path: "../../characters/Duchman.webp" },
-    { name: "King Neptune", path: "../../characters/King_Neptune.webp" },
-    { name: "Perch Perkins", path: "../../characters/Perch_Perkins.webp" },
-    { name: "Grandma Squarepants", path: "../../characters/Grandma.webp" },
+    { name: "Sandy", sandy },
+    {
+      name: "Plankton",
+      path: plankton,
+    },
+    { name: "Pearl", path: pearl },
+    { name: "Patrick", path: patrick },
+    {
+      name: "Mrs. Puff",
+      path: puff,
+    },
+    {
+      name: "Mr. Krabs",
+      path: krabs,
+    },
+    { name: "Karen", path: karen },
+    { name: "Gary", path: gary },
+    {
+      name: "Larry the Lobster",
+      path: larry,
+    },
+    { name: "Flying Duchman", path: duchman },
+    { name: "King Neptune", path: neptun },
+    {
+      name: "Perch Perkins",
+      path: perch,
+    },
+    {
+      name: "Grandma Squarepants",
+      path: grandma,
+    },
   ]);
   const shuffle = (array) => {
     const shuffledArray = [...array];
