@@ -73,7 +73,20 @@ function Container(props) {
         shuffledArray[i],
       ];
     }
-    return shuffledArray;
+    const checkedArr = [...shuffledArray].splice(0, 6);
+    const results = [];
+    checkedArr.forEach((ele) => {
+      results.push(store.includes(ele.name));
+    });
+    const set = new Set(results);
+
+    if (set.size === 2 || (set.size === 1 && set.has(false))) {
+      return shuffledArray;
+    }
+    if (set.size === 2 || (set.size === 1 && set.has(true))) {
+      return shuffledArray;
+    }
+    return shuffle(shuffledArray);
   };
   useEffect(() => {
     setCards(shuffle(cards));
@@ -86,8 +99,15 @@ function Container(props) {
       setStore([...store, char]);
       onPick(false);
     }
-    setCards(shuffle(cards));
   };
+  useEffect(() => {
+    if (store.length === cards.length) {
+      onPick(false);
+      onPick(true);
+      setStore([]);
+    }
+    setCards(shuffle(cards));
+  }, [store]);
 
   return (
     <div className="container">
